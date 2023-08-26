@@ -1,7 +1,8 @@
 # Coffee License Website
 
-[Go to website 👀](https://coffee-license.org)
+- [Website](https://coffee-license.org)  
+- [Repository](https://github.com/coffee-license/license)
 
 ## License
 
-[Coffee License](./LICENSE)
+[☕ Coffee License](./LICENSE)
