@@ -38,6 +38,7 @@
 	<h3>🤝 Conditions</h3>
 	<ul>
 		<li>🟡 Buy them a ☕</li>
+		<li>🟡 License and copyright notice</li>
 	</ul>
 
 	<h3>☝️ Limitations</h3>
