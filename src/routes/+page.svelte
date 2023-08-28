@@ -1,37 +1,62 @@
+<script lang="ts">
+	import Email from '$lib/Email.svelte';
+	import { VERSIONS } from '$lib/versions';
+</script>
+
 <main>
 	<img src="/coffee-license.svg" alt="coffee license logo" />
 	<h1>Coffee License</h1>
-	<code>
-		Coffee License 1.0
-		<br />
-		<br />
 
-		Use this software in any way you like. If we meet, buy us a coffee.
-		<br />
-		<br />
-
-		We disclaim all warranties with regard to this software. In no event are we liable for any
-		damages whatsoever.
-	</code>
-	<br />
+	<div>
+		<ul>
+			{#each VERSIONS as version}
+				<li><a href="/{version}">Version {version}</a></li>
+			{/each}
+		</ul>
+	</div>
 	<br />
 
-	<h2>🫴 Permissions</h2>
-	<p>Use this software in any way you like.</p>
-
-	<h2>🤝 Conditions</h2>
-	<p>If we meet, buy us a coffee.</p>
-
-	<h2>☝️ Limitations</h2>
+	<h2>Summary</h2>
 	<p>
-		We disclaim all warranties with regard to this software. In no event are we liable for any
-		damages whatsoever.
+		A very permissive software license, for people who like coffee as much as i do. <br /> It's
+		comparable to
+		<a
+			href="https://choosealicense.com/licenses/unlicense"
+			target="_blank"
+			rel="noopener noreferrer">The Unlicense</a
+		> in that it lets people do anything with your code, without you being liable for any damages.
 	</p>
-	<br />
+
+	<h3>🫴 Permissions</h3>
+	<ul>
+		<li>🟢 Private use</li>
+		<li>🟢 Commercial use</li>
+		<li>🟢 Modification</li>
+		<li>🟢 Distribution</li>
+	</ul>
+
+	<h3>🤝 Conditions</h3>
+	<ul>
+		<li>🟡 Buy them a ☕</li>
+	</ul>
+
+	<h3>☝️ Limitations</h3>
+	<ul>
+		<li>🔴 Liability</li>
+		<li>🔴 Warranty</li>
+	</ul>
+
+	<h2>Contact</h2>
+	<Email address="info@coffee-license.org" />
 	<br />
 
 	<div>
-		<a href="https://github.com/coffee-license/website" target="_blank" rel="noopener noreferrer">
+		<a
+			class="github-link"
+			href="https://github.com/coffee-license/website"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor">
 				<g
 					stroke-width="1.5"
@@ -45,27 +70,26 @@
 					/>
 				</g>
 			</svg>
+
+			<span>F**k me on GitHub</span>
 		</a>
 	</div>
 </main>
 
-<style>
-	main {
-		width: 100%;
-		max-width: 32rem;
-		margin: 0 auto;
-		padding: 2rem;
-		box-sizing: border-box;
-		font-size: 1.25rem;
-	}
-
+<style lang="scss">
 	img {
-		width: 8rem;
+		width: 6rem;
 	}
 
-    svg {
-        width: 2em;
-        height: 2em;
-        stroke: currentColor;
-    }
+	.github-link {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+
+		svg {
+			width: 1.5em;
+			height: 1.5em;
+			stroke: currentColor;
+		}
+	}
 </style>

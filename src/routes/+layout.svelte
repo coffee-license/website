@@ -1,20 +1,19 @@
-<slot />
+<script>
+	import '../app.scss';
+</script>
 
-<style>
-	:root,
-	:global(body) {
-		font-family: sans-serif;
-		color-scheme: light dark;
-		margin: 0;
+<main>
+	<slot />
+</main>
+
+<style lang="scss">
+	main {
+		width: 100%;
+		max-width: 32rem;
+		margin: 0 auto;
+		padding: 2rem;
+		padding-bottom: 80vh;
 		box-sizing: border-box;
-	}
-
-	:global(a) {
-		color: unset;
-		text-decoration: none;
-	}
-
-	:global(a:hover) {
-		color: rgb(0, 81, 255);
+		font-size: 1.1rem;
 	}
 </style>
