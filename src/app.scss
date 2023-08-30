@@ -16,13 +16,14 @@ body {
 }
 
 pre,
-code {
+code,
+.mono {
 	font-family: 'Fira Mono', monospace;
-	user-select: text;
-	cursor: text;
 }
 
 pre {
+	user-select: text;
+	cursor: text;
 	white-space: wrap;
 	white-space: preserve-breaks wrap;
 	padding: 1.25rem;
@@ -33,6 +34,7 @@ pre {
 a {
 	color: hsl(221, 100%, 50%);
 	text-decoration: none;
+	cursor: pointer;
 }
 
 a:hover {

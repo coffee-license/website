@@ -32,7 +32,8 @@
 				</g>
 			</svg>
 
-			<span>F**k me on GitHub</span>
+			<code class="idle">f**k me</code>
+			<code class="hover">fork me</code>
 		</a>
 	</div>
 </main>
@@ -46,13 +47,30 @@
 		padding-bottom: 80vh;
 		box-sizing: border-box;
 		font-size: 1.1rem;
-	background-color: hsla(0, 0%, 60%, 0.02);
+		background-color: hsla(0, 0%, 60%, 0.02);
 	}
 
 	.github-link {
 		display: flex;
 		align-items: center;
 		gap: 0.5em;
+
+		&,
+		code {
+			cursor: pointer;
+		}
+
+		&:not(:hover) {
+			color: unset;
+
+			.hover {
+				display: none;
+			}
+		}
+
+		&:hover .idle {
+			display: none;
+		}
 
 		svg {
 			width: 1.5em;
