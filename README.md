@@ -1,8 +1,8 @@
 # Coffee License Website
 
-- [Website](https://coffee-license.org)  
-- [All license version](https://github.com/coffee-license/license)
+- [See website in action](https://coffee-license.org)  
+- [Licenses repository](https://github.com/coffee-license/license)
 
 ## License
 
-[☕ Coffee License](./LICENSE)
+This project is licensed under the [☕ Coffee License 1.0](https://coffee-license.org/v1.0).
